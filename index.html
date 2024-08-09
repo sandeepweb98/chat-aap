@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>webchat app</title>
+</head>
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <svg width="50" height="100" viewBox="0 0 96 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_101_6)">
+                <path d="M21.76 53.94V21.44H7.56C3.38 21.44 0 24.84 0 29.02V96.2C0 99.58 4.08 101.26 6.46 98.88L22.08 83.26H66.56C70.74 83.26 74.12 79.88 74.12 75.7V61.5H29.34C25.16 61.5 21.76 58.12 21.76 53.94Z" fill="#00AC47"/>
+                <path d="M88.32 0H29.34C25.16 0 21.78 3.38 21.78 7.56V21.44H66.56C70.74 21.44 74.12 24.82 74.12 29V61.48H88.32C92.5 61.48 95.88 58.1 95.88 53.92V7.56C95.88 3.38 92.5 0 88.32 0Z" fill="#5BB974"/>
+                <path d="M66.56 21.44H21.76V53.92C21.76 58.1 25.14 61.48 29.32 61.48H74.1V29.02C74.12 24.84 70.74 21.44 66.56 21.44Z" fill="#00832D"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_101_6">
+                <rect width="95.88" height="100" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            <h1>webchat</h1>
+        </div>
+        <div class="message_area">
+            <div class="incoming message"></div>
+            <div class="outgoing message"></div>
+        </div>
+        <div>
+            <textarea name="" id="textarea" cols="30" rows="1" placeholder="write your message"></textarea>
+        </div>
+        <footer>Copyright @ by Sandeep</footer>
+    </section>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
